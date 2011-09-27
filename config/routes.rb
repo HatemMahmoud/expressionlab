@@ -1,4 +1,7 @@
 Expressionlab::Application.routes.draw do
+  resources :pages, :only => :show
+  root :to => "pages#show", :id => :home
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
