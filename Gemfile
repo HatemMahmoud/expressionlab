@@ -1,12 +1,10 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
-
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+gem 'jquery-rails'
 gem 'mysql2'
 
+gem 'rspec-rails', :group => [:development, :test]
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,8 +14,6 @@ group :assets do
   gem 'uglifier'
 end
 
-gem 'jquery-rails'
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -26,5 +22,3 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-
-gem 'rspec-rails', :group => [:development, :test]
