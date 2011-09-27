@@ -5,3 +5,16 @@
  *= require_self
  *= require_tree . 
 */
+
+nav li {
+  display: inline;
+}
+
+a{
+  color: #03568C;
+}
+
+a:hover {
+  color: white;
+  background-color: #03568C;
+}

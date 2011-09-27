@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Expressionlab</title>
+  <meta charset="utf-8" />
+  <title>ExpressionLab</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <header>
+    <nav>
+      <ul>
+        <li><%= link_to 'HOME', root_path %></li>
+        <li><%= link_to 'THOUGHTS', '#' %></li>
+        <li><%= link_to 'WORK', '#' %></li>
+        <li><%= link_to 'CONTACT', '#' %></li>
+      </ul>
+    </nav>
+    <hgroup>
+      <h1><%= link_to 'ExpressionLab', root_path %></h1>
+    </hgroup>
+  </header>
+  <%= yield %>
 
 </body>
 </html>
