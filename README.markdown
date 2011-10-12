@@ -16,4 +16,5 @@ rake db:migrate
 AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
 rails g resource article title:string summary:string content:text
 rake db:migrate
+rails g active_admin:resource article
 ```
