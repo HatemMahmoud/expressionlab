@@ -17,4 +17,6 @@ AdminUser.create!(:email => 'admin@example.com', :password => 'password', :passw
 rails g resource article title:string summary:string content:text
 rake db:migrate
 rails g active_admin:resource article
+rails g migration AddPublishedAtToArticles published_at:datetime
+rake db:migrate
 ```
