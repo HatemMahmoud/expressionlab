@@ -1,0 +1,11 @@
+<div class="post">
+  <div class="post_head">
+    <div class="post_date"><%= article.published_at.strftime('%B %d, %Y') %></div>
+    <h2><%= link_to article.title, article %></h2>
+    <div class="post_metadata">
+      <div class="post_tags"> Tags:</div>
+      <div class="post_comments"><a href="#" class="commentslink">comments</a></div>
+    </div>
+  </div>
+  <p class="excerpt"><%= article.summary.html_safe %></p>
+</div>

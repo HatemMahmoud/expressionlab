@@ -8,12 +8,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- <%#= yield %> -->
   <div id="header">
     <div id="menu">
         <ul class="inline">
           <li class="current"><a class="selected" href="/" title="Home">Home</a></li>
-          <li><a href="/thoughts" title="Thoughts">Thoughts</a></li>
+          <li><%= link_to 'Thoughts', articles_path %></li>
           <li><a href="/work" title="Work">Work</a></li>
           <li><a href="/contact" title="Contact">Contact</a></li>
         </ul>
@@ -69,20 +68,7 @@
   <div class="section">
     <div class="section_content">
       <div class="main">
-        <div class="post entry-5567">
-          <div class="post_head">
-            <div class="post_date">April 24th, 2011</div>
-            <h2><a href="/2011/4/24/html5-history-and-features" title="HTML5 History and Features">HTML5 History and Features</a></h2>
-            <div class="post_metadata">
-              <div class="post_tags"> Tags: <a href="/tags/html5" rel="tag" title="html5">html5</a>, <a href="/tags/presentation" rel="tag" title="presentation">presentation</a></div>
-              <div class="post_comments">
-                <a href="/2011/4/24/html5-history-and-features#comments" class="commentslink">0 comments</a>
-              </div>
-            </div>
-          </div>
-          <p class="excerpt"><img title="HTML5" alt="HTML5" src="/assets/articles/HTML5_Logo_64.png" class="excerpt_image">Here are the slides I have presented last Thursday, April 21, 2011 about <strong>HTML5 History and Features</strong> in a <strong>TechTalk</strong> session at <a href="http://www.espace.com.eg" target="_blank">eSpace</a>.</p>
-          <p class="read_more"><a href="/2011/4/24/html5-history-and-features">Read more...</a></p>
-        </div>
+        <%= yield %>
       </div>
       <div class="sidebar">
         <h3 class="title">Search</h3>
