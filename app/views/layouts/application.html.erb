@@ -8,20 +8,218 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><%= link_to 'HOME', root_path %></li>
-        <li><%= link_to 'THOUGHTS', '#' %></li>
-        <li><%= link_to 'WORK', '#' %></li>
-        <li><%= link_to 'CONTACT', '#' %></li>
-      </ul>
-    </nav>
-    <hgroup>
-      <h1><%= link_to 'ExpressionLab', root_path %></h1>
-    </hgroup>
-  </header>
-  <%= yield %>
-
+  <!-- <%#= yield %> -->
+  <div id="header">
+    <div id="menu">
+        <ul class="inline">
+          <li class="current"><a class="selected" href="/" title="Home">Home</a></li>
+          <li><a href="/thoughts" title="Thoughts">Thoughts</a></li>
+          <li><a href="/work" title="Work">Work</a></li>
+          <li><a href="/contact" title="Contact">Contact</a></li>
+        </ul>
+    </div>
+    <div id="logo">
+        <h1 title="ExpressionLab"><a href="/">ExpressionLab</a></h1>
+    </div>
+    <div id="header_content">
+      <div class="column">
+          <h2>Web Design</h2>
+          <ul class="bulleted">
+              <li>
+                  <a href="/work">Stylish Web 2.0 Designs</a>
+              </li>
+              <li>
+                  <a href="/work">Cross-browser Compatibility</a>
+              </li>
+              <li>
+                  <a href="/work">Standards Compliant Coding</a>
+              </li>
+          </ul>
+      </div>
+      <div class="column middle_column">
+          <h2>Web Development</h2>
+          <ul class="bulleted">
+              <li>
+                  <a href="/work">Ruby on Rails Development</a>
+              </li>
+              <li>
+                  <a href="/work">Content Management Systems</a>
+              </li>
+              <li>
+                  <a href="/work">Forums and Blogs</a>
+              </li>
+          </ul>
+      </div>
+      <div class="column">
+          <h2>Web Marketing</h2>
+          <ul class="bulleted">
+              <li>
+                  <a href="/work">Search Engine Optimization</a>
+              </li>
+              <li>
+                  <a href="/work">Accessibility &amp; Usability Testing</a>
+              </li>
+              <li>
+                  <a href="/work">Corporate Identity Design</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section_content">
+      <div class="main">
+        <div class="post entry-5567">
+          <div class="post_head">
+            <div class="post_date">April 24th, 2011</div>
+            <h2><a href="/2011/4/24/html5-history-and-features" title="HTML5 History and Features">HTML5 History and Features</a></h2>
+            <div class="post_metadata">
+              <div class="post_tags"> Tags: <a href="/tags/html5" rel="tag" title="html5">html5</a>, <a href="/tags/presentation" rel="tag" title="presentation">presentation</a></div>
+              <div class="post_comments">
+                <a href="/2011/4/24/html5-history-and-features#comments" class="commentslink">0 comments</a>
+              </div>
+            </div>
+          </div>
+          <p class="excerpt"><img title="HTML5" alt="HTML5" src="/assets/articles/HTML5_Logo_64.png" class="excerpt_image">Here are the slides I have presented last Thursday, April 21, 2011 about <strong>HTML5 History and Features</strong> in a <strong>TechTalk</strong> session at <a href="http://www.espace.com.eg" target="_blank">eSpace</a>.</p>
+          <p class="read_more"><a href="/2011/4/24/html5-history-and-features">Read more...</a></p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h3 class="title">Search</h3>
+        <form action="/search" id="sform" method="get">
+            <input type="text" name="q" value="" id="q" alt="Search"><input name="go_button" type="submit" id="go_button" value="Go">
+        </form><h3 class="title">Follow Me</h3>
+        <p class="sponsor">
+            <a class="image_link" href="http://twitter.com/HatemMahmoud" target="_blank"><img alt="Follow me on Twitter" title="Follow me on Twitter" src="/assets/articles/twitter.png"></a>
+        </p><h3 class="title">Recommend Me</h3>
+        <p class="sponsor">
+            <a class="image_link" href="http://www.workingwithrails.com/person/7951-hatem-mahmoud" target="_blank"><img alt="Recommend me on WorkingWithRails" title="Recommend me on WorkingWithRails" src="/assets/recommend_me.gif"></a>
+        </p><h3 class="title">View My Profile</h3>
+        <p class="sponsor">
+            <a class="image_link" href="http://www.linkedin.com/in/HatemMahmoud" target="_blank"><img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.gif" width="160" height="33" border="0" alt="View my LinkedIn profile" title="View my LinkedIn profile"></a>
+        </p><h3 class="title">View My Presentations</h3>
+        <p class="sponsor">
+            <a class="image_link" title="View my presentations on SlideShare" href="http://www.slideshare.net/HatemMahmoud" target="_blank"><img src="http://public.slidesharecdn.com/images/badge160X33px_lite.png" width="160" height="33" border="0" alt="View my presentations on SlideShare"></a>
+        </p><h3 class="title">Web Hosting</h3>
+        <p class="sponsor">
+            <a class="image_link" href="https://customers.asmallorange.com/aff.php?aff=11885" target="_blank"><img alt="A Small Orange Hosting" title="A Small Orange Hosting" src="/assets/articles/asmallorange2.png" width="200px"></a>
+        </p><h3 class="title">Tags</h3>
+        <p>
+            <a href="/tags/accounting" rel="tag" title="accounting">accounting</a>, <a href="/tags/agile%20roles" rel="tag" title="agile roles">agile roles</a>, <a href="/tags/alsaha" rel="tag" title="alsaha">alsaha</a>, <a href="/tags/aptana" rel="tag" title="aptana">aptana</a>, <a href="/tags/campaign" rel="tag" title="campaign">campaign</a>, <a href="/tags/community%20engine" rel="tag" title="community engine">community engine</a>, <a href="/tags/contest" rel="tag" title="contest">contest</a>, <a href="/tags/css" rel="tag" title="css">css</a>, <a href="/tags/dell" rel="tag" title="dell">dell</a>, <a href="/tags/eclipse" rel="tag" title="eclipse">eclipse</a>, <a href="/tags/egypt" rel="tag" title="egypt">egypt</a>, <a href="/tags/espace" rel="tag" title="espace">espace</a>, <a href="/tags/firebug" rel="tag" title="firebug">firebug</a>, <a href="/tags/firefox" rel="tag" title="firefox">firefox</a>, <a href="/tags/flash" rel="tag" title="flash">flash</a>, <a href="/tags/forum" rel="tag" title="forum">forum</a>, <a href="/tags/full-text%20search" rel="tag" title="full-text search">full-text search</a>, <a href="/tags/google" rel="tag" title="google">google</a>, <a href="/tags/haml" rel="tag" title="haml">haml</a>, <a href="/tags/html" rel="tag" title="html">html</a>, <a href="/tags/html5" rel="tag" title="html5">html5</a>, <a href="/tags/idea" rel="tag" title="idea">idea</a>, <a href="/tags/infographic" rel="tag" title="infographic">infographic</a>, <a href="/tags/instantrails" rel="tag" title="instantrails">instantrails</a>, <a href="/tags/internet" rel="tag" title="internet">internet</a>, <a href="/tags/internet%20explorer" rel="tag" title="internet explorer">internet explorer</a>, <a href="/tags/ipad%20app" rel="tag" title="ipad app">ipad app</a>, <a href="/tags/janrain%20engage" rel="tag" title="janrain engage">janrain engage</a>, <a href="/tags/javascript" rel="tag" title="javascript">javascript</a>, <a href="/tags/json" rel="tag" title="json">json</a>, <a href="/tags/jsoor" rel="tag" title="jsoor">jsoor</a>, <a href="/tags/kerberos" rel="tag" title="kerberos">kerberos</a>, <a href="/tags/kubuntu" rel="tag" title="kubuntu">kubuntu</a>, <a href="/tags/laptop" rel="tag" title="laptop">laptop</a>, <a href="/tags/linux" rel="tag" title="linux">linux</a>, <a href="/tags/management" rel="tag" title="management">management</a>, <a href="/tags/mephisto" rel="tag" title="mephisto">mephisto</a>, <a href="/tags/mission-critical%20software" rel="tag" title="mission-critical software">mission-critical software</a>, <a href="/tags/mobile" rel="tag" title="mobile">mobile</a>, <a href="/tags/mysql" rel="tag" title="mysql">mysql</a>, <a href="/tags/network%20security" rel="tag" title="network security">network security</a>, <a href="/tags/octave" rel="tag" title="octave">octave</a>, <a href="/tags/pizza%20hack%20day" rel="tag" title="pizza hack day">pizza hack day</a>, <a href="/tags/postgres" rel="tag" title="postgres">postgres</a>, <a href="/tags/presentation" rel="tag" title="presentation">presentation</a>, <a href="/tags/project" rel="tag" title="project">project</a>, <a href="/tags/project%20management" rel="tag" title="project management">project management</a>, <a href="/tags/quora" rel="tag" title="quora">quora</a>, <a href="/tags/rails" rel="tag" title="rails">rails</a>, <a href="/tags/rails%20authentication" rel="tag" title="rails authentication">rails authentication</a>, <a href="/tags/requirements%20engineering" rel="tag" title="requirements engineering">requirements engineering</a>, <a href="/tags/resque" rel="tag" title="resque">resque</a>, <a href="/tags/restful_authentication" rel="tag" title="restful_authentication">restful_authentication</a>, <a href="/tags/routing" rel="tag" title="routing">routing</a>, <a href="/tags/ruby%20framework" rel="tag" title="ruby framework">ruby framework</a>, <a href="/tags/saas" rel="tag" title="saas">saas</a>, <a href="/tags/semantic%20web" rel="tag" title="semantic web">semantic web</a>, <a href="/tags/social%20networking" rel="tag" title="social networking">social networking</a>, <a href="/tags/software%20architecture" rel="tag" title="software architecture">software architecture</a>, <a href="/tags/software%20engineering%20radio" rel="tag" title="software engineering radio">software engineering radio</a>, <a href="/tags/software%20quality" rel="tag" title="software quality">software quality</a>, <a href="/tags/source%20code%20editor" rel="tag" title="source code editor">source code editor</a>, <a href="/tags/ssl" rel="tag" title="ssl">ssl</a>, <a href="/tags/symbian" rel="tag" title="symbian">symbian</a>, <a href="/tags/task%20cards" rel="tag" title="task cards">task cards</a>, <a href="/tags/thinking%20sphinx" rel="tag" title="thinking sphinx">thinking sphinx</a>, <a href="/tags/tls" rel="tag" title="tls">tls</a>, <a href="/tags/tutorial" rel="tag" title="tutorial">tutorial</a>, <a href="/tags/unicode" rel="tag" title="unicode">unicode</a>, <a href="/tags/video" rel="tag" title="video">video</a>, <a href="/tags/voting" rel="tag" title="voting">voting</a>, <a href="/tags/web%203.0" rel="tag" title="web 3.0">web 3.0</a>, <a href="/tags/web%20analytics" rel="tag" title="web analytics">web analytics</a>, <a href="/tags/web%20design" rel="tag" title="web design">web design</a>, <a href="/tags/windows" rel="tag" title="windows">windows</a>, <a href="/tags/youtube" rel="tag" title="youtube">youtube</a>
+        </p>
+        <h3 class="title">Recently</h3>
+        <ul class="image_bulleted thoughts separated">
+          <li>
+              <a href="/2011/4/24/html5-history-and-features" title="HTML5 History and Features">HTML5 History and Features</a>
+          </li>
+          <li>
+              <a href="/2011/4/5/the-wonderful-world-of-quora" title="The Wonderful World Of Quora">The Wonderful World Of Quora</a>
+          </li>
+          <li>
+              <a href="/2011/4/1/installing-postgres-gem-on-windows" title="Installing Postgres gem on Windows">Installing Postgres gem on Windows</a>
+          </li>
+          <li>
+              <a href="/2011/4/1/fixing-the-the-program-can-t-start-because-msvcrt-ruby18-dll-is-missing-from-your-computer-error-message" title="Fixing the &quot;The program can't start because msvcrt-ruby18.dll is missing from your computer&quot; error message">Fixing the "The program can't start because msvcrt-ruby18.dll is missing from your computer" error message</a>
+          </li>
+          <li>
+              <a href="/2011/3/23/firefox-4-released-with-a-great-campaign" title="Firefox 4 Released with a Great Campaign">Firefox 4 Released with a Great Campaign</a>
+          </li>
+        </ul>
+        <h3 class="title">Archives</h3>
+        <ul class="image_bulleted archives separated">
+          <li>
+              <a href="/archives/2011/4" title="April 2011">April 2011</a> (4)
+          </li>
+          <li>
+              <a href="/archives/2011/3" title="March 2011">March 2011</a> (2)
+          </li>
+          <li>
+              <a href="/archives/2010/10" title="October 2010">October 2010</a> (1)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer" class="section">
+    <div class="section_content">
+      <div class="column">
+          <h4>About</h4>
+          <ul id="about" class="separated">
+              <li>
+                  ExpressionLab is the online home of <a href="http://www.workingwithrails.com/person/7951-hatem-mahmoud" target="_blank">Hatem Mahmoud</a>, a professional developer who loves to build web applications. Here is where I publish my <a href="/thoughts">thoughts</a>
+                  and show my <a href="/work">work</a>.
+              </li>
+          </ul>
+      </div>
+      <div class="column middle_column">
+          <h4>Resources</h4>
+          <ul class="separated image_bulleted links">
+              <li>
+                  <a href="http://mashable.com/" target="_blank">Mashable</a>
+              </li>
+              <li>
+                  <a href="http://www.smashingmagazine.com" target="_blank">Smashing Magazine</a>
+              </li>
+              <li>
+                  <a href="http://techcrunch.com/" target="_blank">TechCrunch</a>
+              </li>
+              <li>
+                  <a href="http://www.sitepoint.com/" target="_blank">SitePoint</a>
+              </li>
+          </ul>
+      </div>
+      <div class="column">
+          <h4>Favorites</h4>
+          <ul class="separated image_bulleted links">
+              <li>
+                  <a href="https://customers.asmallorange.com/aff.php?aff=11885" target="_blank">A Small Orange</a>
+              </li>
+              <li>
+                  <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>
+              </li>
+              <li>
+                  <a href="https://github.com/hatem/" target="_blank">GitHub</a>
+              </li>
+              <li>
+                  <a target="_blank" href="http://www.espace.com.eg/">eSpace</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div id="copyright">
+        <p>
+            © 2011 ExpressionLab. All Rights Reserved.
+        </p>
+        <ul class="inline">
+            <li>
+                <a href="/" class="current">Home </a>
+            </li>
+            <li>
+                <a href="/thoughts">Thoughts </a>
+            </li>
+            <li>
+                <a href="/work">Work </a>
+            </li>
+            <li>
+                <a href="/contact">Contact </a>
+            </li>
+        </ul>
+        <ul class="inline">
+            <li>
+                <a target="_blank" href="http://validator.w3.org/check/referer">XHTML</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http://www.expressionlab.com/">508</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://validator.w3.org/feed/check.cgi?url=http://www.expressionlab.com/feed/atom.xml">Feed</a>
+            </li>
+        </ul>
+        <a href="/feed/atom.xml" class="feed" title="Feed">Feed</a>
+    </div>
+  </div>
 </body>
 </html>
