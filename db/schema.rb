@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111012104030) do
+ActiveRecord::Schema.define(:version => 20111022114405) do
+
+  create_table "active_admin_comments", :force => true do |t|
+    t.string   "namespace"
+    t.integer  "resource_id",   :null => false
+    t.string   "resource_type", :null => false
+    t.integer  "author_id"
+    t.string   "author_type"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "active_admin_comments", ["author_type", "author_id"], :name => "index_active_admin_comments_on_author_type_and_author_id"
+  add_index "active_admin_comments", ["namespace"], :name => "index_active_admin_comments_on_namespace"
 
   create_table "admin_users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -33,7 +47,7 @@ ActiveRecord::Schema.define(:version => 20111012104030) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
-    t.string   "summary"
+    t.text     "summary"
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"

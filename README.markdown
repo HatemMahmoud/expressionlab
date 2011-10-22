@@ -19,4 +19,6 @@ rake db:migrate
 rails g active_admin:resource article
 rails g migration AddPublishedAtToArticles published_at:datetime
 rake db:migrate
+rails g migration CreateActiveAdminComments
+rake db:migrate
 ```
