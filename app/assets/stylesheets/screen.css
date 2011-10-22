@@ -68,7 +68,7 @@ abbr {
 /***** Menu *****/
 #menu {
     width: 320px;
-    color: #60B8CA;
+    color: #FFFFFF;
     height: 22px;
     margin: 5px auto;
     text-align: center;
@@ -83,9 +83,6 @@ abbr {
 #menu a:hover {
     color: #FFFFFF;
     text-decoration:none;
-}
-#menu .current a{
-    color:#FFFFFF;
 }
 
 /***** Header *****/

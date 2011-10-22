@@ -11,10 +11,10 @@
   <div id="header">
     <div id="menu">
         <ul class="inline">
-          <li class="current"><a class="selected" href="/" title="Home">Home</a></li>
-          <li><%= link_to 'Thoughts', articles_path %></li>
-          <li><a href="/work" title="Work">Work</a></li>
-          <li><a href="/contact" title="Contact">Contact</a></li>
+          <li><%= link_to_unless_current 'Home', root_url %></li>
+          <li><%= link_to_unless_current 'Thoughts', articles_path %></li>
+          <li><%= link_to_unless_current 'Work', '#' %></li>
+          <li><%= link_to_unless_current 'Contact', '#' %></li>
         </ul>
     </div>
     <div id="logo">
