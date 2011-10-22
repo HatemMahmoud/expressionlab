@@ -21,4 +21,6 @@ rails g migration AddPublishedAtToArticles published_at:datetime
 rake db:migrate
 rails g migration CreateActiveAdminComments
 rake db:migrate
+rails g migration ChangeArticleSummaryToText
+rake db:migrate
 ```
