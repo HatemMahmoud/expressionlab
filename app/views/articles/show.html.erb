@@ -7,6 +7,7 @@
       <% @article.comments.each do |comment| %>
         <li class="alt" id="comment-<%= comment.id %>">
           <div class="comment_header">
+            <%= image_tag gravatar(comment.email, 40), :class => 'gravatar' %>
             <p>
               <strong><%= link_to_unless comment.website.blank?, comment.name, comment.website %></strong><br>
               <span class="post_date"><%= comment.created_at.strftime('%B %d, %Y %I:%M %p') %></span>
