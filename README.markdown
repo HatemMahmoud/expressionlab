@@ -23,4 +23,7 @@ rails g migration CreateActiveAdminComments
 rake db:migrate
 rails g migration ChangeArticleSummaryToText
 rake db:migrate
+rails g model Comment article:references name:string email:string website:string content:text
+rake db:migrate
+rails generate controller Comments
 ```

@@ -1,2 +1,40 @@
 <%= render @article %>
 <%= @article.content.html_safe %>
+<div id="comments" class="commentsblock">
+  <% if @article.comments.size > 0 %>
+    <h3 class="title"><%= pluralize @article.comments.size, 'Comment' %></h3>
+    <ul class="commentlist">
+      <% @article.comments.each do |comment| %>
+        <li class="alt" id="comment-<%= comment.id %>">
+          <div class="comment_header">
+            <p>
+              <strong><%= link_to_unless comment.website.blank?, comment.name, comment.website %></strong><br>
+              <span class="post_date"><%= comment.created_at.strftime('%B %d, %Y %I:%M %p') %></span>
+            </p>
+          </div>
+          <p><%= comment.content %></p>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+  <div id="comments" class="commentsblock">
+    <h3 class="title">Leave a Comment</h3>
+    <% if @comment && @comment.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize @comment.errors.count, 'error' %> prohibited this comment from being saved:</h2>
+        <ul>
+          <% @comment.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <%= form_for [@article, @comment] do |f| %>
+      <div><%= f.label :name %> <%= f.text_field :name, :required => true %></div>
+      <div><%= f.label :email %> <%= f.email_field :email, :required => true %></div>
+      <div><%= f.label :website %> <%= f.url_field :website, :placeholder => 'http://example.com' %></div>
+      <div><%= f.text_area :content, :cols => '65', :rows => '15', :required => true %></div>
+      <div><%= f.submit %></div>
+    <% end %>
+  </div>
+</div>

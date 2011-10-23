@@ -227,16 +227,6 @@ ul.links li {
     color:#6B9800;
     font-weight:bold;
 }
-#comment-errors {
-    color: #CC0000;
-    background-color: #FFEBEB;
-    border: 2px solid #E88C8C;
-    font-weight: bold;
-    padding:10px 0 10px 30px;
-}
-#comment-errors li {
-    padding:5px 0;
-}
 
 /***** Post *****/
 .post {
@@ -469,4 +459,21 @@ a.highslide-full-expand {
     margin: 0 10px 10px 0;
     width: 34px;
     height: 34px;
+}
+
+/****** Scaffold ******/
+#notice {
+  color: green;
+}
+
+#error_explanation {
+  color: #CC0000;
+  background-color: #FFEBEB;
+  border: 2px solid #E88C8C;
+  padding: 10px 0 10px 30px;
+}
+
+.field_with_errors {
+  border: 2px solid #E88C8C;
+  display: table; 
 }

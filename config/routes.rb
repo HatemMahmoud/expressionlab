@@ -1,7 +1,12 @@
 Expressionlab::Application.routes.draw do
-  resources :articles
+  
   ActiveAdmin.routes(self)
   devise_for :admin_users, ActiveAdmin::Devise.config
+  
+  resources :articles do
+    resources :comments
+  end
+  
   resources :pages, :only => :show
   root :to => "pages#show", :id => :home
   
