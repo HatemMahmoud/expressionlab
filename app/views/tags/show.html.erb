@@ -1,0 +1,6 @@
+<h2 class="section_title">Tags: "<%= @tag.name %>"</h2>
+<ul class="image_bulleted thoughts separated">
+  <% for article in @articles do %>
+    <li><%= article.published_at.strftime('%B %d, %Y') %>: <%= link_to article.title, article %></li>
+  <% end %>
+</ul>
