@@ -1,13 +1,15 @@
 ActiveAdmin.register Article do
   index do
-    column 'ID', :id
+    column 'ID', :id, :sortable => :id do |article|
+      link_to article.id, admin_article_path(article)
+    end
     column :title, :sortable => :title do |article|
       link_to article.title, article
     end
     column :created_at
     column :updated_at
     column :published_at
-    column :comments_count
+    column 'Comments', :comments_count
     column :Edit do |article|
       link_to 'Edit', edit_admin_article_path(article)
     end
