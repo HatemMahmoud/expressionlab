@@ -1,5 +1,4 @@
 <%= render @article %>
-<%= @article.content.html_safe %>
 <div id="comments" class="commentsblock">
   <% if @article.comments.size > 0 %>
     <h3 class="title"><%= pluralize @article.comments.size, 'Comment' %></h3>

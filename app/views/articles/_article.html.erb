@@ -8,4 +8,5 @@
     </div>
   </div>
   <p class="excerpt"><%= article.summary.html_safe %></p>
+  <%= article.content.html_safe if controller.action_name == 'show' %>
 </div>
