@@ -8,5 +8,9 @@
     </div>
   </div>
   <p class="excerpt"><%= article.summary.html_safe %></p>
-  <%= article.content.html_safe if controller.action_name == 'show' %>
+  <% if controller.action_name == 'index' %>
+    <p class="read_more"><%= link_to 'Read more...', article %></p>
+  <% else %>
+    <%= article.content.html_safe %>
+  <% end %>
 </div>
