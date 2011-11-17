@@ -36,7 +36,7 @@ namespace :legacy do
         puts "Migrating tags of article #{article.id}..."
         taggings = Legacy::Tagging.find_all_by_taggable_id(article.legacy_id)
         tags = taggings.map{|tagging| Legacy::Tag.find(tagging.tag_id)}
-        article.tag_list = tags.map{|tag| tag.name.parameterize}
+        article.tag_list = tags.map{|tag| tag.name.titleize}
         article.save!
       end
       puts 'Tags migrated successfully.'

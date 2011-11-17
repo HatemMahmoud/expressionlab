@@ -1,6 +1,6 @@
 class TagsController < ApplicationController
   def show
-    @tag = Tag.find_by_name(params[:id])
-    @articles = Article.published.tagged_with(@tag.name)
+    @tag = params[:id].gsub('_', '.').titleize
+    @articles = Article.published.tagged_with(@tag)
   end
 end
