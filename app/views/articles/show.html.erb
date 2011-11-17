@@ -8,7 +8,7 @@
           <div class="comment_header">
             <%= image_tag gravatar(comment.email, 40), :class => 'gravatar' %>
             <p>
-              <strong><%= link_to_unless comment.website.blank?, comment.name, comment.website %></strong><br>
+              <strong><%= link_to_unless comment.website.blank?, comment.name, comment.website, :target => '_blank' %></strong><br>
               <span class="post_date"><%= comment.created_at.strftime('%B %d, %Y %I:%M %p') %></span>
             </p>
           </div>

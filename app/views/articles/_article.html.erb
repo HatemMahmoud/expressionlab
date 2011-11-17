@@ -3,14 +3,14 @@
     <div class="post_date"><%= article.published_at.strftime('%B %d, %Y') %></div>
     <h2><%= link_to article.title, article %></h2>
     <div class="post_metadata">
-      <div class="post_tags">Tags: <%= raw article.tags.collect{|tag| link_to tag.name, tag_path(tag.name) }.join(', ') %></div>
+      <div class="post_tags">Tags: <%= raw article.tags.map{|tag| link_to tag.name, tag_path(tag.name.parameterize) }.join(', ') %></div>
       <div class="post_comments"><%= link_to pluralize(article.comments.size, 'Comment'), "#{article_path(article)}#comments" %></div>
     </div>
   </div>
   <p class="excerpt"><%= article.summary.html_safe %></p>
-  <% if controller.action_name == 'index' %>
-    <p class="read_more"><%= link_to 'Read more...', article %></p>
-  <% else %>
+  <% if current_page?(article) %>
     <%= article.content.html_safe %>
+  <% else %>
+    <p class="read_more"><%= link_to 'Read more...', article %></p>
   <% end %>
 </div>
