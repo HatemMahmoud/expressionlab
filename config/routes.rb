@@ -3,6 +3,8 @@ Expressionlab::Application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :admin_users, ActiveAdmin::Devise.config
   resources :tags, :only => :show
+  match ':year/:month/:day/:title' => "articles#show", :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, :day => /\d{1,2}/ }
+  # match "/:year(/:month(/:day))" => "articles#archive", :constraints => { :year => /\d{4}/, :month => /\d{2}/, :day => /\d{2}/ }
   resources :articles do
     resources :comments
   end
