@@ -8,7 +8,7 @@
     </div>
   </div>
   <p class="excerpt"><%= article.summary.html_safe %></p>
-  <% if current_page?(article) %>
+  <% if current_page?(article_path_by_date(article)) %>
     <%= article.content.html_safe %>
   <% else %>
     <p class="read_more"><%= link_to 'Read more...', article_path_by_date(article) %></p>
