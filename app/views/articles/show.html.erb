@@ -30,10 +30,10 @@
       </div>
     <% end %>
     <%= form_for [@article, @comment] do |f| %>
-      <div><%= f.label :name %> <%= f.text_field :name, :required => true %></div>
-      <div><%= f.label :email %> <%= f.email_field :email, :required => true %></div>
-      <div><%= f.label :website %> <%= f.url_field :website, :placeholder => 'http://example.com' %></div>
-      <div><%= f.text_area :content, :cols => '65', :rows => '15', :required => true %></div>
+      <div><%= f.label :name %><br /><%= f.text_field :name, :required => true %></div>
+      <div><%= f.label :email %><br /><%= f.email_field :email, :required => true %></div>
+      <div><%= f.label :website %><br /><%= f.url_field :website, :placeholder => 'http://example.com' %></div>
+      <div><%= f.label :content %><br /><%= f.text_area :content, :cols => '65', :rows => '15', :required => true %></div>
       <div><%= f.submit %></div>
     <% end %>
   </div>
