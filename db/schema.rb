@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111110084917) do
+ActiveRecord::Schema.define(:version => 20111121074019) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "namespace"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20111110084917) do
     t.datetime "published_at"
     t.integer  "comments_count", :default => 0, :null => false
     t.integer  "legacy_id"
+    t.string   "slug"
   end
 
   create_table "comments", :force => true do |t|
