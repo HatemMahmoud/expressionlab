@@ -5,6 +5,7 @@ class Article < ActiveRecord::Base
   validates :summary, :content, :presence => true, :length => {:minimum => 3, :maximum => 65535, :allow_blank => true}
   
   scope :published, where('published_at IS NOT NULL').order('published_at DESC')
+  scope :recent, published.order('published_at DESC').limit(5)
   
   acts_as_taggable
 end

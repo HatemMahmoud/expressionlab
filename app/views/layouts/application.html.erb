@@ -74,6 +74,14 @@
         <%= yield %>
       </div>
       <div class="sidebar">
+        <h3 class="title">Recently</h3>
+        <ul class="image_bulleted thoughts separated">
+          <% for article in Article.recent do %>
+          <li>
+            <%= link_to article.title, article_path_by_date(article) %>
+          </li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
