@@ -8,4 +8,10 @@ class Article < ActiveRecord::Base
   scope :recent, published.order('published_at DESC').limit(5)
   
   acts_as_taggable
+
+  before_save :update_slug
+  
+  def update_slug
+    self.slug = self.title.parameterize
+  end
 end
