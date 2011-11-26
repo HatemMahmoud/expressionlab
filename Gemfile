@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'mysql2'
 gem 'activeadmin'
 gem 'acts-as-taggable-on', '~>2.1.0'
+gem 'kaminari'
 
 gem 'rspec-rails', :group => [:development, :test]
 

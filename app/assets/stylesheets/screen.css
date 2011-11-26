@@ -389,6 +389,23 @@ a.feed{
     line-height:0px;
 }
 
+/***** Pagination *****/
+.pagination{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.pagination span{
+  padding: 1px;
+}
+.pagination span a{
+  padding: 1px 5px;
+}
+.pagination .current{
+  padding: 1px 5px;
+  color: #C60;
+}
+
 /***** Highslide *****/
 .highslide-container div {
     font-family: Verdana, Helvetica;
