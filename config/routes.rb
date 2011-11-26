@@ -6,6 +6,7 @@ Expressionlab::Application.routes.draw do
   match ':year/:month/:day/:slug' => "articles#show", :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, :day => /\d{1,2}/ }
   # match "/:year(/:month(/:day))" => "articles#archive", :constraints => { :year => /\d{4}/, :month => /\d{2}/, :day => /\d{2}/ }
   resources :articles do
+    get 'page/:page', :action => :index, :on => :collection
     resources :comments
   end
   resources :pages, :only => :show
