@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/HatemMahmoud/expressionlab.png)](https://codeclimate.com/github/HatemMahmoud/expressionlab)
 ```
 rails new expressionlab -d mysql --skip-test-unit
 cd expressionlab/
