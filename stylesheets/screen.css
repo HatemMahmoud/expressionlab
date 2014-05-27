@@ -1,0 +1,275 @@
+/* Authored by Hatem Mahmoud, inspired by http://www.adamkaplan.me/grid/ */
+
+/* Layout
+   ========================================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #777;
+  background-color: #fff;
+}
+
+section {
+  padding-bottom: 2.5rem;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70rem;
+  width: 90%;
+}
+
+/* Grid
+   ========================================================================== */
+
+@media (min-width: 64rem) {
+  .column {
+    float: left;
+    margin: 0;
+    padding: 0rem 1.5rem;
+  }
+
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }
+}
+
+/* Clearfix by Nicolas Gallagher
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* Header
+   ========================================================================== */
+
+header {
+  background-color: #497bad;
+  padding: 7rem 0 5rem;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  padding: .4rem .6rem;
+  border: 3px solid #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+header p {
+  color: rgba(255,255,255,0.7);
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+header a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: underline;
+}
+
+header a:hover { text-decoration: none; }
+
+/* Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #555;
+  font-size: 1.3rem;
+  margin: 2.5rem auto 1rem;
+}
+
+p {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+blockquote { margin: 0; }
+
+blockquote p {
+  color: #bbb;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+cite { color: #bbb; }
+
+/* Code
+   ========================================================================== */
+
+code {
+  background-color: #f8f8f8;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.3rem;
+  position: relative;
+  top: -1px;
+  white-space: nowrap;
+}
+
+/* Lists
+   ========================================================================== */
+
+ul {
+  margin: 0;
+  text-align: left;
+}
+
+@media (min-width: 40rem) {
+  ul { display: inline-block; }
+}
+
+/* Links
+   ========================================================================== */
+
+a {
+  color: #497bad;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+/* Multimedia
+   ========================================================================== */
+
+img {
+  display: block;
+  height: auto;
+  margin: 0 auto 1.5rem auto;
+  width: 100%;
+}
+
+/* Forms
+   ========================================================================== */
+
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #497bad;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background: #5183b6;
+  text-decoration: none;
+}
+
+@media (min-width: 40rem) {
+  .button {
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer
+   ========================================================================== */
+
+footer {
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+
+/* Animate.css by Daniel Eden
+   ========================================================================== */
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  } 100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
