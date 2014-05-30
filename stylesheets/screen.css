@@ -10,26 +10,22 @@
 }
 
 html {
-  font: 100%/1.5 "Open Sans", sans-serif;
-  font-weight: 400;
+  font: 100%/1.5 "Open Sans";
+  font-weight: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  color: #777;
+  color: #a2968a;
   background-color: #fff;
-}
-
-section {
-  padding-bottom: 2.5rem;
 }
 
 .container {
   text-align: center;
   margin: 0 auto;
   max-width: 70rem;
-  width: 90%;
+  width: 94%;
 }
 
 /* Grid
@@ -62,52 +58,18 @@ section {
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
-/* Header
-   ========================================================================== */
-
-header {
-  background-color: #497bad;
-  padding: 7rem 0 5rem;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 1.8rem;
-  padding: .4rem .6rem;
-  border: 3px solid #fff;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-header p {
-  color: rgba(255,255,255,0.7);
-  margin: 0 auto;
-  max-width: 30rem;
-}
-
-header a {
-  color: rgba(255,255,255,0.9);
-  text-decoration: underline;
-}
-
-header a:hover { text-decoration: none; }
-
 /* Typography
    ========================================================================== */
 
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
-}
-
-h1 {
-  font-size: 1.5rem;
+h1,
+h2 {
+  font-family: Cuprum;
 }
 
 h2 {
-  color: #555;
-  font-size: 1.3rem;
+  color: #8e8071;
+  font-size: 1.7rem;
+  font-weight: normal;
   margin: 2.5rem auto 1rem;
 }
 
@@ -116,97 +78,55 @@ p {
   max-width: 40rem;
 }
 
-blockquote { margin: 0; }
-
-blockquote p {
-  color: #bbb;
-  font-style: italic;
-  margin-bottom: 1.5rem;
-}
-
-cite { color: #bbb; }
-
-/* Code
-   ========================================================================== */
-
-code {
-  background-color: #f8f8f8;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #ddd;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-size: 0.8rem;
-  padding: 0.1rem 0.3rem;
-  position: relative;
-  top: -1px;
-  white-space: nowrap;
-}
-
-/* Lists
-   ========================================================================== */
-
-ul {
-  margin: 0;
-  text-align: left;
-}
-
-@media (min-width: 40rem) {
-  ul { display: inline-block; }
-}
-
 /* Links
    ========================================================================== */
 
 a {
-  color: #497bad;
+  color: #e86741;
   text-decoration: none;
 }
 
 a:hover { text-decoration: underline; }
 
-/* Multimedia
+/* Header
    ========================================================================== */
 
-img {
-  display: block;
-  height: auto;
-  margin: 0 auto 1.5rem auto;
-  width: 100%;
+header {
+  padding: 7rem 0;
+  border-top: 5px solid #006699;
+  background: #006699;
+  background: -moz-linear-gradient(top, #006699 0%, #289bb8 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
+  background: -o-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
+  background: -ms-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
+  background: linear-gradient(to bottom, #006699 0%,#289bb8 50%,#ffffff 100%);
 }
 
-/* Forms
-   ========================================================================== */
-
-.button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #497bad;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: none;
+header h1 {
   color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.7rem 1.5rem;
-  vertical-align: middle;
-  white-space: nowrap;
+  font-size: 2.5rem;
+  text-shadow:0 1px 5px #006699;
 }
 
-.button:hover {
-  background: #5183b6;
-  text-decoration: none;
+header p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  max-width: 40rem;
+  font-size: 1.2rem;
 }
 
-@media (min-width: 40rem) {
-  .button {
-    display: inline-block;
-    font-size: 0.9rem;
-  }
+/* Section
+   ========================================================================== */
+
+section {
+  border-top: 1px solid #E3D9BF;
+  padding-bottom: 2.5rem;
+  background: #f5f3df;
+  background: -moz-linear-gradient(top, #f5f3df 0%, #ffffff 50%);
+  background: -webkit-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
+  background: -o-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
+  background: -ms-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
+  background: linear-gradient(to bottom, #f8f3f0 0%,#ffffff 50%);
 }
 
 /* Footer
@@ -215,7 +135,7 @@ img {
 footer {
   font-size: 0.8rem;
   padding: 1rem 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(227, 217, 191, 0.29);
 }
 
 /* Animate.css by Daniel Eden
