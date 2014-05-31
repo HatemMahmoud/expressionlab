@@ -11,13 +11,12 @@
 
 html {
   font: 100%/1.5 "Open Sans";
-  font-weight: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  color: #a2968a;
+  color: #8e8071;
   background-color: #fff;
 }
 
@@ -67,10 +66,10 @@ h2 {
 }
 
 h2 {
-  color: #8e8071;
+  color: #7c6452;
   font-size: 1.7rem;
   font-weight: normal;
-  margin: 2.5rem auto 1rem;
+  margin: 3rem auto 1rem;
 }
 
 p {
@@ -111,7 +110,6 @@ header h1 {
 header p {
   color: rgba(255, 255, 255, 0.9);
   margin: 0 auto;
-  max-width: 40rem;
   font-size: 1.2rem;
 }
 
@@ -120,7 +118,7 @@ header p {
 
 section {
   border-top: 1px solid #E3D9BF;
-  padding-bottom: 2.5rem;
+  padding: 0 0 3rem;
   background: #f5f3df;
   background: -moz-linear-gradient(top, #f5f3df 0%, #ffffff 50%);
   background: -webkit-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
@@ -133,9 +131,22 @@ section {
    ========================================================================== */
 
 footer {
-  font-size: 0.8rem;
   padding: 1rem 0;
-  border-top: 1px solid rgba(227, 217, 191, 0.29);
+  border-top: 1px solid rgba(227, 217, 191, 0.3);
+}
+
+footer p {
+  margin: 0.5rem auto;
+  font-size: 0.7rem;
+}
+
+footer a {
+  color: #8e8071;
+}
+
+footer a:hover { 
+  color: #e86741;
+  text-decoration: none;
 }
 
 /* Animate.css by Daniel Eden
