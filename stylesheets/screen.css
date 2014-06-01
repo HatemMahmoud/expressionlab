@@ -91,9 +91,8 @@ a:hover { text-decoration: underline; }
    ========================================================================== */
 
 header {
-  padding: 7rem 0;
-  border-top: 5px solid #006699;
-  background: #006699;
+  padding: 8rem 0;
+  background: #289bb8;
   background: -moz-linear-gradient(top, #006699 0%, #289bb8 50%, #ffffff 100%);
   background: -webkit-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
   background: -o-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
@@ -119,7 +118,7 @@ header p {
 section {
   border-top: 1px solid #E3D9BF;
   padding: 0 0 3rem;
-  background: #f5f3df;
+  background: #f8f3f0;
   background: -moz-linear-gradient(top, #f5f3df 0%, #ffffff 50%);
   background: -webkit-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
   background: -o-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
