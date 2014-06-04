@@ -16,8 +16,8 @@ html {
 }
 
 body {
-  color: #8e8071;
-  background-color: #fff;
+  color: #80716c;
+  background-color: #fffdfa;
 }
 
 .container {
@@ -91,39 +91,38 @@ a:hover { text-decoration: underline; }
    ========================================================================== */
 
 header {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background: #289bb8;
-  background: -moz-linear-gradient(top, #006699 0%, #289bb8 50%, #ffffff 100%);
-  background: -webkit-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
-  background: -o-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
-  background: -ms-linear-gradient(top, #006699 0%,#289bb8 50%,#ffffff 100%);
-  background: linear-gradient(to bottom, #006699 0%,#289bb8 50%,#ffffff 100%);
+  background:    -moz-linear-gradient(top, #006699 0%, #289bb8 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #006699 0%, #289bb8 50%, #ffffff 100%);
+  background:      -o-linear-gradient(top, #006699 0%, #289bb8 50%, #ffffff 100%);
+  background:     -ms-linear-gradient(top, #006699 0%, #289bb8 50%, #ffffff 100%);
+  background:   linear-gradient(to bottom, #006699 0%, #289bb8 50%, #ffffff 100%);
+  background:   linear-gradient(to bottom, #006699 0%, #289bb8 50%, #fffdfa 100%);
 }
 
 header h1 {
   color: #fff;
   font-size: 2.5rem;
-  text-shadow:0 1px 5px #006699;
+  text-shadow: 0 1px 5px #006699;
+}
+
+@media (min-width: 64rem) {
+  header h1 {
+    font-size: 3rem;
+  }
 }
 
 header p {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0 auto;
-  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.3rem;
 }
 
 /* Section
    ========================================================================== */
 
 section {
-  border-top: 1px solid #E3D9BF;
   padding: 0 0 3rem;
-  background: #f8f3f0;
-  background: -moz-linear-gradient(top, #f5f3df 0%, #ffffff 50%);
-  background: -webkit-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
-  background: -o-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
-  background: -ms-linear-gradient(top, #f5f3df 0%,#ffffff 50%);
-  background: linear-gradient(to bottom, #f8f3f0 0%,#ffffff 50%);
 }
 
 /* Footer
@@ -131,7 +130,7 @@ section {
 
 footer {
   padding: 1rem 0;
-  border-top: 1px solid rgba(227, 217, 191, 0.3);
+  border-top: 1px solid #f8f3f0;
 }
 
 footer p {
