@@ -91,7 +91,7 @@ a:hover { text-decoration: underline; }
    ========================================================================== */
 
 header {
-  padding: 8rem 0;
+  padding: 7rem 0 9rem;
   background: #289bb8;
   background:    -moz-linear-gradient(top, #006699 0%, #289bb8 60%, #fffdfa 100%);
   background: -webkit-linear-gradient(top, #006699 0%, #289bb8 60%, #fffdfa 100%);
