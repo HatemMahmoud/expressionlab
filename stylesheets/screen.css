@@ -17,7 +17,7 @@ html {
 
 body {
   color: #8e8071;
-  background-color: #b7aba1;
+  background-color: #fffdfa;
 }
 
 .container {
@@ -69,7 +69,7 @@ h2 {
   color: #7b6b53;
   font-size: 1.8rem;
   font-weight: normal;
-  margin: 3rem auto 1rem;
+  margin: 2rem auto 1rem;
 }
 
 p {
@@ -103,14 +103,14 @@ header {
 
 header h1 {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 5rem auto 0;
   text-shadow: 0 1px 3px rgba(0, 102, 153, 0.3);
 }
 
 header p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-shadow: 0 1px 3px rgba(0, 102, 153, 0.3);
 }
 
@@ -119,16 +119,13 @@ header p {
 
 section {
   padding: 0 0 3rem;
-  background-color: #fffdfa;
 }
 
 /* Footer
    ========================================================================== */
 
 footer {
-  padding: 2rem 0 0.5rem;
-  background-color: #f0f0eb;
-  background:   linear-gradient(to bottom, #fffdfa 0%, #b7aba1 100%);
+  padding: 2rem 0 0.25rem;
 }
 
 footer p {
